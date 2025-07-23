@@ -1,0 +1,123 @@
+.about-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 0;
+  margin: 0;
+}
+
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.hero-title {
+  color: #3b82f6;
+  font-weight: 900;
+  font-size: 44px;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.hero-description {
+  color: #222;
+  font-size: 22px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.features-mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.section-column {
+  flex: 1;
+  min-width: 320px;
+}
+
+.section-title {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.feature-list {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.7;
+  padding-left: 24px;
+}
+
+.mission-text {
+  color: #222;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.contact-title {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.contact-text {
+  color: #444;
+  font-size: 18px;
+}
+
+.contact-link {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .about-inner {
+    padding: 1rem 0.5rem;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .features-mission {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .section-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .feature-list {
+    font-size: 1rem;
+    padding-left: 12px;
+  }
+  .mission-text {
+    font-size: 1rem;
+  }
+  .contact-title {
+    font-size: 1rem;
+  }
+  .contact-text {
+    font-size: 0.95rem;
+  }
+}

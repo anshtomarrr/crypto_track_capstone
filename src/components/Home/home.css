@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  background: #f5f6fa;
+  color: #222;
+}
+
+/* Update container to be full screen */
+.container {
+    padding: 1.5rem;
+    min-height: 100vh;
+  background: #fff;
+    width: 100%;
+  color: #222;
+  font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.stats-card {
+  background-color: #f5f6fa;
+    border-radius: 16px;
+    padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.stats-card h3 {
+  color: #3b82f6;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-item:last-child {
+    border-bottom: none;
+}
+
+.stats-item img {
+    margin-right: 0.5rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #fff, #8a8af0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Keep table styles the same */
+.crypto-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.crypto-table th,
+.crypto-table td {
+    padding: 1rem;
+    text-align: left;
+  color: #222;
+  border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.crypto-table th {
+  background-color: #f5f6fa;
+  color: #3b82f6;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.crypto-table tr {
+    transition: background-color 0.2s ease;
+}
+
+.crypto-table tr:hover {
+  background-color: #f0f4fa;
+    cursor: pointer;
+}
+
+.coin-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  color: #222;
+}
+
+.coin-cell img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.coin-cell:hover img {
+    transform: scale(1.1);
+}
+
+.coin-name {
+    font-weight: 500;
+  color: #222;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.red {
+  color: #dc2626;
+}
+
+/* Update navbar styles to match table width exactly */
+.search-container {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  color: #222;
+  background: #f5f6fa;
+  border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: #3b82f6;
+    opacity: 0.6;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #3b82f622;
+}
+
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clickable-row:hover {
+  background-color: #f0f4fa;
+}
+
+@media screen and (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .crypto-table {
+        font-size: 0.9rem;
+    }
+
+    .crypto-table th,
+    .crypto-table td {
+        padding: 0.75rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  .stats-card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .crypto-table {
+    font-size: 0.92rem;
+    border-radius: 8px;
+    box-shadow: none;
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+  .crypto-table th,
+  .crypto-table td {
+    padding: 0.5rem;
+    font-size: 0.92rem;
+  }
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .search-input {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+}

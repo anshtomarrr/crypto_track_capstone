@@ -1,0 +1,254 @@
+.portfolio-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 0;
+  margin: 0;
+  color: #222;
+}
+
+.portfolio-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-title {
+  color: #3b82f6;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.add-coin-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-coin-button:hover {
+  background: #2563eb;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  color: #3b82f6;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f5f6fa;
+  color: #222;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.submit-button {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-button:hover {
+  background: #2563eb;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.table-header {
+  background: #f5f6fa;
+  color: #3b82f6;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+}
+
+.table-row {
+  border-bottom: 1px solid rgba(138, 138, 240, 0.1);
+}
+
+.table-cell {
+  padding: 1rem;
+  color: #222;
+}
+
+.chart-container {
+  margin-top: 2rem;
+  height: 400px;
+  background: #f5f6fa;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.range-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.range-button {
+  background: #e0e7ef;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #3b82f6;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.range-button.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
+
+.coin-select {
+  margin-bottom: 1rem;
+}
+
+.coin-select .select__control {
+  background: rgba(20, 20, 35, 0.8);
+  border-color: rgba(138, 138, 240, 0.2);
+}
+
+.coin-select .select__menu {
+  background: rgba(30, 30, 50, 0.95);
+}
+
+.coin-select .select__option {
+  background: transparent;
+  color: #e1e1e6;
+}
+
+.coin-select .select__option:hover {
+  background: rgba(138, 138, 240, 0.1);
+}
+
+.coin-select .select__single-value {
+  color: #e1e1e6;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-inner {
+    padding: 0.7rem;
+  }
+  .portfolio-header {
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .portfolio-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .add-coin-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+  .portfolio-table {
+    font-size: 0.92rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+  .table-header,
+  .table-cell {
+    padding: 0.5rem;
+    font-size: 0.92rem;
+  }
+  .chart-container {
+    padding: 0.5rem;
+    border-radius: 8px;
+    height: 220px;
+  }
+}
